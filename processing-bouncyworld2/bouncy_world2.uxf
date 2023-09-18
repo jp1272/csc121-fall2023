@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>60</y>
+      <w>120</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>**BouncyApp**
+--
+BouncyWorld w
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>200</y>
+      <w>310</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>**BouncyWorld**
+--
+Anchor a1
+Anchor a2
+Blob bob
+boolean isPaused
+--
+draw(PApplet) : PApplet
+update() : BouncyWorld
+mousePressed(MouseEvent) : BouncyWorld
+keyPressed(KeyEvent) : BouncyWorld
+
+closerAnchor(Posn) : Anchor
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>130</x>
+      <y>80</y>
+      <w>50</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30.0;120.0;30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>470</y>
+      <w>270</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Posn
+--
+float x
+float y
+--
+drawLineTo(PApplet, Posn) : PApplet
+distanceTo(Posn) : float
+scale(float) : Posn
+translate(Posn) : Posn
+diff(Posn) : Posn
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>90</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Anchor
+--
+Posn loc
+--
+draw(PApplet) : PApplet
+highlight(PApplet) : PApplet
+translate(Posn) : Anchor
+distanceTo(Posn) : double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>90</y>
+      <w>160</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;50.0;10.0;50.0;140.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>90</y>
+      <w>160</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;50.0;10.0;50.0;160.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>450</y>
+      <w>240</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Blob
+--
+Posn loc
+int BOUNCE_FACTOR
+--
+draw(PApplet, Anchor) : PApplet
+moveTowards(Anchor) : Blob
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>470</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>110</y>
+      <w>80</w>
+      <h>380</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>60.0;360.0;60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>250</y>
+      <w>80</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>60.0;200.0;60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

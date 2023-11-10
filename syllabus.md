@@ -56,7 +56,7 @@ The determination of how well a student meets the learning outcomes above will b
 
 
 ## Evaluation Components and Grading Scale
-Your grade will be computed based on a weighted average of the following course requirements:
+Your grade will be computed based on a weighted average of the following course requirements. The minimum to attain an A will be an overall course average of 90%, for a B 80%, for a C 70%, and for a D 60%.
 
 - **10% Class attendance/participation**
     > Attendance in class is essential. Our meetings will consist of a mixture of lecture, discussion, and programming. You will be expected to read assigned material prior to the class session and to participate actively in class.

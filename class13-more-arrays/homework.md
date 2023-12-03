@@ -13,8 +13,3 @@ Copy the live code from lecture here into your project:
 
 You may assume that the coldest possible valid temperature value is -460 (absolute zero, Fahrenheit), and, reasonably speaking, the warmest possible valid temperature value is 1000 (warmest temperature on Mercury is 800 degrees Fahrenheit). 
 
-
-
-## Part 2 
-
-TBA
